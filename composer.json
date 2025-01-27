@@ -1,0 +1,17 @@
+{
+    "name": "hexlet/code",
+    "description": "brain games",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "evgeniy",
+            "email": "uhvatkin.e@gigwork.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
