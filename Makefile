@@ -7,3 +7,6 @@ brain-games: # запускаем приветствие
 
 validate: # валидация composer
 	./composer validate
+
+lint: 
+	./composer exec --verbose phpcs -- --standard=PSR12 src bin
