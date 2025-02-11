@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+namespace BrainGames\Cli;
+
+use function BrainGames\Cli\engine;
+use function BrainGames\Cli\welcome;
+use function cli\line;
+
+function brainCalc(){
+        $name = welcome();
+        calc($name);
+}
+
+function calc($name) {
+        $introduction = 'What is the result of the expression?';
+	$numbers = [];
+	
+	for ($i = 0; $i < 3; $i++) {
+        $first = rand(1, 100);
+        $second =  rand(1, 100);
+        switch (rand(1, 3)) {
+            case 1:
+                $numbers["$first + $second"] = (string)  ($first + $second);
+                break;
+            case 2:
+                $numbers["$first - $second"] = (string) ($first - $second);
+                break;
+            case 3:
+                $numbers["$first * $second"] = (string) ($first * $second);
+                break;
+        }
+    }
+
+	line($introduction);
+	engine($numbers, $name);
+}

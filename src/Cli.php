@@ -12,3 +12,5 @@ function welcome()
     line("Hello, %s!", $name);
     return $name;
 }
+
+#function dvij(){line('hello');}

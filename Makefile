@@ -8,6 +8,9 @@ brain-games: # запускаем приветствие
 brain-even: # игра четное-нечетное
 	bin/brain-even
 
+brain-calc: # играем в калькулятор
+	bin/brain-calc
+
 validate: # валидация composer
 	composer validate
 
