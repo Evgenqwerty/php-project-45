@@ -11,6 +11,9 @@ brain-even: # игра четное-нечетное
 brain-calc: # играем в калькулятор
 	bin/brain-calc
 
+brain-gcd: #наибольший общий делитель
+	bin/brain-gcd
+
 validate: # валидация composer
 	composer validate
 
