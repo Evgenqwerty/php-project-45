@@ -17,7 +17,7 @@ brain-gcd: #наибольший общий делитель
 brain-progression: #заполни недостающее значение в прогрессии
 	bin/brain-progression
 
-prime: #простое ли число?
+brain-prime: #простое ли число?
 	bin/brain-prime
 
 validate: # валидация composer
