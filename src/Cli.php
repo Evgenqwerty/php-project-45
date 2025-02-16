@@ -12,5 +12,3 @@ function welcome()
     line("Hello, %s!", $name);
     return $name;
 }
-
-
