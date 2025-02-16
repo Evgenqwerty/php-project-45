@@ -13,3 +13,8 @@ https://asciinema.org/a/k6cJv6IwE2Vv5GttZKAuft8Z4
 ###asciinema brain-gcd
 https://asciinema.org/a/ocXWARcM3QKSjlrJzzdBJxllU
 
+###asciinema brain-gcd
+https://asciinema.org/a/AinYKvC0jidhDm1zboBGMjfdB
+
+###asciinema brain-prime
+https://asciinema.org/a/3VfOZ4Fjeg2xHi5c94JWxPIw4

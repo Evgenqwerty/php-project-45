@@ -14,6 +14,12 @@ brain-calc: # играем в калькулятор
 brain-gcd: #наибольший общий делитель
 	bin/brain-gcd
 
+brain-progression: #заполни недостающее значение в прогрессии
+	bin/brain-progression
+
+prime: #простое ли число?
+	bin/brain-prime
+
 validate: # валидация composer
 	composer validate
 
