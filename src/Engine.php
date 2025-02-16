@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use function cli\prompt;
 use function cli\line;
 
-function engine($numbers, $name)
+function engine(array $numbers, string $name)
 {
     foreach ($numbers as $key => $value) {
         $answer = prompt("Question: $key\nYour answer");
