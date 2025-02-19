@@ -16,7 +16,8 @@ cd php-project-45
 make install
 ```
 
-## Description and rules of games are intuitively understandable. Also you watch this records
+## Description and rules of games...
+### ...are intuitively understandable. Also you can watch this records
 
 * ### [brain-even](https://asciinema.org/a/vtM45Zwb3gk9Mjnz89AAqtyOX)
 
