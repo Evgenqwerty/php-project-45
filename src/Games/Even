@@ -6,12 +6,12 @@ use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainEven (){
+function brainSetEven (){
 	$name = welcome();
-	even($name);
+	setEven($name);
 }
 
-function even($name) {
+function setEven($name) {
         $introduction = 'Answer "yes" if the number is even, otherwise answer "no".';
         $numbers = [];
         for ($i = 0; $i < 3; $i++) {

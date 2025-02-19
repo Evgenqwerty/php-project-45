@@ -6,12 +6,12 @@ use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainCalc(){
+function brainCalculate(){
         $name = welcome();
-        calc($name);
+        calculate($name);
 }
 
-function calc($name) {
+function calculate($name) {
         $introduction = 'What is the result of the expression?';
 	$numbers = [];
 	

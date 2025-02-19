@@ -6,12 +6,12 @@ use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainGCD(){
+function brainSetGCD(){
         $name = welcome();
-        Gcd($name);
+        SetGcd($name);
 }
 
-function Gcd($name) {
+function SetGcd($name) {
 	$introduction = 'Find the greatest common divisor of given numbers.';
 	line($introduction);
 	$numbers = [];

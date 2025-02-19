@@ -6,12 +6,12 @@ use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainProgression(){
+function brainSetProgression(){
 	$name = welcome();
-        progression($name);
+        setProgression($name);
 }
 
-function progression($name) {
+function setProgression($name) {
         $introduction = 'What number is missing in the progression?';
         line($introduction);
 	function getProgression(){
