@@ -16,14 +16,14 @@ cd php-project-45
 make install
 ```
 
-## Description and rules of games you can watch on this records
+## Description and rules of games are intuitively understandable. Also you watch this records
 
-* ### [brain-even](https://asciinema.org/a/ClAuaMHhHfAG5HqZ15gDGCcEA)
+* ### [brain-even](https://asciinema.org/a/vtM45Zwb3gk9Mjnz89AAqtyOX)
 
-* ### [brain-calc](https://asciinema.org/a/k6cJv6IwE2Vv5GttZKAuft8Z4)
+* ### [brain-calc](https://asciinema.org/a/lUpVZdqhfsvnlt7vpOzcgCave)
 
-* ### [brain-gcd](https://asciinema.org/a/ocXWARcM3QKSjlrJzzdBJxllU)
+* ### [brain-gcd](https://asciinema.org/a/VlbokNP3NJQ7v4u4oFgZlV2pA)
 
-* ### [brain-gcd](https://asciinema.org/a/AinYKvC0jidhDm1zboBGMjfdB)
+* ### [brain-gcd](https://asciinema.org/a/WBQ5INIXK8zItlM21jWBeEtHj)
 
-* ### [brain-prime](https://asciinema.org/a/3VfOZ4Fjeg2xHi5c94JWxPIw4)
+* ### [brain-prime](https://asciinema.org/a/Aa0zrdAjgaTJnSUrSoyRPqQ6X)
