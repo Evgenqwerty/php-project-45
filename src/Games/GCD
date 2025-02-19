@@ -13,7 +13,6 @@ function brainSetGCD(){
 
 function SetGcd($name) {
 	$introduction = 'Find the greatest common divisor of given numbers.';
-	line($introduction);
 	$numbers = [];
 	function getGCDBetween($a, $b){
    		 while ($b != 0){
@@ -28,5 +27,5 @@ function SetGcd($name) {
 		$number2 = rand(0, 100);
 		$numbers["$number1 $number2"] = (string) getGCDBetween($number1, $number2);
         }
-	engine($numbers, $name);
+	engine($numbers, $name, $introduction);
 }

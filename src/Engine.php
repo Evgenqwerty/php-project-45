@@ -7,12 +7,14 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use function cli\prompt;
 use function cli\line;
 
-function engine(array $numbers, string $name)
+function engine(array $numbers, string $name, string $introduction):void
 {
-    foreach ($numbers as $key => $value) {
-        $answer = prompt("Question: $key\nYour answer");
-        if ($answer !== $value) {
-            line("'$answer' is wrong answer ;(. Correct answer was '$value'\nLet's try again, $name!");
+    line($introduction);
+    foreach ($numbers as $question => $number) {
+        $answer = prompt("Question: $question\nYour answer");
+        if ($answer !== $number) {
+		line("{$answer} is wrong answer ;(. Correct answer was {$number}");
+			line("Let's try again, {$name}!");
             return;
         } else {
             line('Correct!');

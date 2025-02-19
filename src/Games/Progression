@@ -13,7 +13,6 @@ function brainSetProgression(){
 
 function setProgression($name) {
         $introduction = 'What number is missing in the progression?';
-        line($introduction);
 	function getProgression(){
 			$numers = [];
     			for($i = 0; $i < 3; $i++){
@@ -37,6 +36,6 @@ function setProgression($name) {
 			return $numers;
 	}
 	$numbers = getProgression();
-        engine($numbers, $name);
+        engine($numbers, $name, $introduction);
 }
 

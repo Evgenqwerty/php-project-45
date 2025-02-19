@@ -23,7 +23,6 @@ function setEven($name) {
                         $numbers[$number] = 'no';
                 }
         }
-        line($introduction);
-        engine($numbers, $name);
+        engine($numbers, $name, $introduction);
 }
 
