@@ -18,12 +18,12 @@ make install
 
 ## Description and rules of games you can watch on this records
 
-###[brain-even](https://asciinema.org/a/ClAuaMHhHfAG5HqZ15gDGCcEA)
+* ###[brain-even](https://asciinema.org/a/ClAuaMHhHfAG5HqZ15gDGCcEA)
 
-###[brain-calc](https://asciinema.org/a/k6cJv6IwE2Vv5GttZKAuft8Z4)
+* ###[brain-calc](https://asciinema.org/a/k6cJv6IwE2Vv5GttZKAuft8Z4)
 
-###[brain-gcd](https://asciinema.org/a/ocXWARcM3QKSjlrJzzdBJxllU)
+* ###[brain-gcd](https://asciinema.org/a/ocXWARcM3QKSjlrJzzdBJxllU)
 
-###[brain-gcd](https://asciinema.org/a/AinYKvC0jidhDm1zboBGMjfdB)
+* ###[brain-gcd](https://asciinema.org/a/AinYKvC0jidhDm1zboBGMjfdB)
 
-###[brain-prime](https://asciinema.org/a/3VfOZ4Fjeg2xHi5c94JWxPIw4)
+* ###[brain-prime](https://asciinema.org/a/3VfOZ4Fjeg2xHi5c94JWxPIw4)
