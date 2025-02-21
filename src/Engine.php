@@ -15,11 +15,10 @@ function conversation(array $numbers, string $name, string $introduction): void
             $answer = prompt("Your answer");
         if ($answer !== $number) {
             line("{$answer} is wrong answer ;(. Correct answer was {$number}");
-	    line("Let's try again, {$name}!");
-            return;	    
-        } 
-        line('Correct!');
-        
+            line("Let's try again, {$name}!");
+            return;
+        }
+            line('Correct!');
     }
     line("Congratulations, $name!");
 }
