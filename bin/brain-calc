@@ -2,7 +2,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\brainCalculate;
+use function BrainGames\Cli\greetingCalculate;
 
-brainCalculate();
+greetingCalculate();
 

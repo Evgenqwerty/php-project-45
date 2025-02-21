@@ -6,7 +6,7 @@ use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainSetPrime()
+function greetingPrime()
 {
     $name = welcome();
     setPrime($name);
@@ -20,5 +20,5 @@ function setPrime($name)
         $number = rand(0, 100);
         $number == in_array($number, $primeNums) ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
     }
-    engine($numbers, $name, $introduction);
+    conversation($numbers, $name, $introduction);
 }

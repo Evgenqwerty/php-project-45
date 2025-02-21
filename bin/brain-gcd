@@ -2,6 +2,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\brainSetGCD;
+use function BrainGames\Cli\greetingGCD;
 
-brainSetGCD();
+greetingGCD();
