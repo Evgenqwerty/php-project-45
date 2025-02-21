@@ -1,9 +1,8 @@
 #!/usr/bin/env php
 <?php
-namespace BrainGames\Cli;
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\brainEven;
+use function BrainGames\Cli\brainSetEven;
 
 brainSetEven();
 
