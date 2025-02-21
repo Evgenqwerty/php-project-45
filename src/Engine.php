@@ -11,7 +11,8 @@ function conversation(array $numbers, string $name, string $introduction): void
 {
     line($introduction);
     foreach ($numbers as $question => $number) {
-        $answer = prompt("Question: $question\nYour answer");
+            $askQuestion = line("Question: $question");
+            $answer = prompt("Your answer");
         if ($answer !== $number) {
             line("{$answer} is wrong answer ;(. Correct answer was {$number}");
             line("Let's try again, {$name}!");

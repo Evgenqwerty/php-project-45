@@ -19,21 +19,21 @@ function calculate($name)
     $arrOperations = ['plus', 'minus', 'multiply'];
     for ($i = 0; $i < 3; $i++) {
         $first = rand(1, 100);
-	$second =  rand(1, 100);
-	$mathOperation = array_rand($arrOperations);
+        $second =  rand(1, 100);
+        $mathOperation = array_rand($arrOperations);
         switch ($arrOperations[$mathOperation]) {
-            case 'plus' :
+            case 'plus':
                 $numbers["$first + $second"] = (string)  ($first + $second);
                 break;
-            case 'minus' :
+            case 'minus':
                 $numbers["$first - $second"] = (string) ($first - $second);
                 break;
-            case 'multiply' :
+            case 'multiply':
                 $numbers["$first * $second"] = (string) ($first * $second);
-		break;
-            default: $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
+                break;
+            default:
+                $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
         }
     }
-
     conversation($numbers, $name, $introduction);
 }
