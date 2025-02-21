@@ -1,22 +1,23 @@
-#!/usr/bin/env php
 <?php
+
 namespace BrainGames\Cli;
 
 use function BrainGames\Cli\engine;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function brainCalculate(){
-        $name = welcome();
-        calculate($name);
+function brainCalculate()
+{
+    $name = welcome();
+    calculate($name);
 }
 
-function calculate($name) {
-        $introduction = 'What is the result of the expression?';
-	$numbers = [];
-	$quantityMathCases = 3;
-	
-	for ($i = 0; $i < $quantityMathCases; $i++) {
+function calculate($name)
+{
+    $introduction = 'What is the result of the expression?';
+    $numbers = [];
+    $quantityMathCases = 3;
+    for ($i = 0; $i < $quantityMathCases; $i++) {
         $first = rand(1, 100);
         $second =  rand(1, 100);
         switch (rand(1, $quantityMathCases)) {
@@ -32,5 +33,5 @@ function calculate($name) {
         }
     }
 
-	engine($numbers, $name, $introduction);
+    conversation($numbers, $name, $introduction);
 }

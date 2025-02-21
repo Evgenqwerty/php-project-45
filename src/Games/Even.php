@@ -1,0 +1,28 @@
+<?php
+
+namespace BrainGames\Cli;
+
+use function BrainGames\Cli\engine;
+use function BrainGames\Cli\welcome;
+use function cli\line;
+
+function brainSetEven()
+{
+    $name = welcome();
+    setEven($name);
+}
+
+function setEven($name)
+{
+    $introduction = 'Answer "yes" if the number is even, otherwise answer "no".';
+    $numbers = [];
+    for ($i = 0; $i < 3; $i++) {
+            $number = rand(0, 100);
+        if ($number % 2 == 0) {
+            $numbers[$number] = 'yes';
+        } else {
+                $numbers[$number] = 'no';
+        }
+    }
+    conversation($numbers, $name, $introduction);
+}
