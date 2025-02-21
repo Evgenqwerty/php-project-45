@@ -30,7 +30,8 @@ function calculate($name)
                 break;
             case 'multiply' :
                 $numbers["$first * $second"] = (string) ($first * $second);
-                break;
+		break;
+            default: $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
         }
     }
 
