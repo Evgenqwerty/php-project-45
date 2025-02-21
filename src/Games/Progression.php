@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -12,7 +12,7 @@ function greetingProgression()
         setProgression($name);
 }
 
-function setProgression($name)
+function setProgression(string $name)
 {
     $introduction = 'What number is missing in the progression?';
     function getProgression()

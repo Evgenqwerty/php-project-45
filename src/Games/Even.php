@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -12,7 +12,7 @@ function greetingEven()
     setEven($name);
 }
 
-function setEven($name)
+function setEven(string $name)
 {
     $introduction = 'Answer "yes" if the number is even, otherwise answer "no".';
     $numbers = [];

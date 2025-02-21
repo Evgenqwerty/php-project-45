@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -12,7 +12,7 @@ function greetingCalculate()
     calculate($name);
 }
 
-function calculate($name)
+function calculate(string $name)
 {
     $introduction = 'What is the result of the expression?';
     $numbers = [];

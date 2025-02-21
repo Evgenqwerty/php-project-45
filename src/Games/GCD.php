@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\engine;
+use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -11,7 +11,7 @@ function greetingGCD()
         $name = welcome();
         SetGcd($name);
 }
-function SetGcd($name)
+function SetGcd(string $name)
 {
     $introduction = 'Find the greatest common divisor of given numbers.';
     $numbers = [];
