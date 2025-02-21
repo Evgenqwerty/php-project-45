@@ -16,18 +16,19 @@ function calculate($name)
 {
     $introduction = 'What is the result of the expression?';
     $numbers = [];
-    $quantityMathCases = 3;
-    for ($i = 0; $i < $quantityMathCases; $i++) {
+    $arrOperations = ['plus', 'minus', 'multiply'];
+    for ($i = 0; $i < 3; $i++) {
         $first = rand(1, 100);
-        $second =  rand(1, 100);
-        switch (rand(1, $quantityMathCases)) {
-            case 1:
+	$second =  rand(1, 100);
+	$mathOperation = array_rand($arrOperations);
+        switch ($arrOperations[$mathOperation]) {
+            case 'plus' :
                 $numbers["$first + $second"] = (string)  ($first + $second);
                 break;
-            case 2:
+            case 'minus' :
                 $numbers["$first - $second"] = (string) ($first - $second);
                 break;
-            case 3:
+            case 'multiply' :
                 $numbers["$first * $second"] = (string) ($first * $second);
                 break;
         }
