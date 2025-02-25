@@ -11,19 +11,19 @@ function greetingGCD()
         $name = welcome();
         SetGcd($name);
 }
+function getGCDBetween($a, $b)
+{
+    while ($b != 0) {
+        $m = $a % $b;
+        $a = $b;
+        $b = $m;
+    }
+    return $a;
+}
 function SetGcd(string $name)
 {
     $introduction = 'Find the greatest common divisor of given numbers.';
     $numbers = [];
-    function getGCDBetween($a, $b)
-    {
-        while ($b != 0) {
-            $m = $a % $b;
-            $a = $b;
-            $b = $m;
-        }
-        return $a;
-    }
     for ($i = 0; $i < 3; $i++) {
         $number1 = rand(0, 100);
         $number2 = rand(0, 100);
