@@ -6,7 +6,7 @@ use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function greetingProgression()
+function launchProgression()
 {
         $name = welcome();
         setProgression($name);

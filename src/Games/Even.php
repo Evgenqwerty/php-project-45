@@ -6,7 +6,7 @@ use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function greetingEven()
+function launchEven()
 {
     $name = welcome();
     setEven($name);
@@ -21,7 +21,7 @@ function setEven(string $name)
         if ($number % 2 == 0) {
             $numbers[$number] = 'yes';
         } else {
-                $numbers[$number] = 'no';
+            $numbers[$number] = 'no';
         }
     }
     conversation($numbers, $name, $introduction);

@@ -6,7 +6,7 @@ use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function greetingGCD()
+function launchGCD()
 {
         $name = welcome();
         SetGcd($name);

@@ -6,7 +6,7 @@ use function BrainGames\Cli\conversation;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
-function greetingCalculate()
+function launchCalculate()
 {
     $name = welcome();
     calculate($name);
@@ -16,12 +16,13 @@ function calculate(string $name)
 {
     $introduction = 'What is the result of the expression?';
     $numbers = [];
-    $arrOperations = ['plus', 'minus', 'multiply'];
-    for ($i = 0; $i < 3; $i++) {
+    $operations = ['plus', 'minus', 'multiply'];
+    $iterationNumber = 3;
+    for ($i = 0; $i < $iterationNumber; $i++) {
         $first = rand(1, 100);
         $second =  rand(1, 100);
-        $mathOperation = array_rand($arrOperations);
-        switch ($arrOperations[$mathOperation]) {
+        $mathOperation = array_rand($operations);
+        switch ($operations[$mathOperation]) {
             case 'plus':
                 $numbers["$first + $second"] = (string)  ($first + $second);
                 break;
