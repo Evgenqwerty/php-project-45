@@ -15,6 +15,7 @@ function launchProgression()
 function getNumbers()
 {
     $numbers = [];
+    $resultNumbers = [];
     $start = rand(5, 10);
     $step = rand(1, 5);
     $maxNumber = rand(5, 10);
