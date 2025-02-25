@@ -11,29 +11,44 @@ function launchProgression()
         $name = welcome();
         setProgression($name);
 }
+
+function getNumbers()
+{
+    $numbers = [];
+    $start = rand(5, 10);
+    $step = rand(1, 5);
+    $maxNumber = rand(5, 10);
+    $firstNumber = $start - $step;
+    $a = 0;
+    for ($i = 0; $i <= $maxNumber; $i++) {
+        $val = $a + $step;
+        $b = $val;
+        $a = $b;
+        $numbers[$i] = $val;
+    }  // Получили массив N чисел в последовательности от start и с шагом step
+
+    $positionToReplace = rand(0, $maxNumber);
+    $answer = $numbers[$positionToReplace];  // Сохранили число для замены (ответ) в переменную
+    $numbers[$positionToReplace] = '..';  // Заменяем в массиве-последовательности рандомное число на '..'
+    $question = implode(' ', $numbers);
+    $resultNumbers[] = $question;
+    $resultNumbers[] = $answer;
+    return $resultNumbers;
+}
+
 function getProgression()
 {
-    $numers = [];
-    for ($i = 0; $i < 3; $i++) {
-        $arrProg = [];
-        $iter = rand(1, 5);
-        $quantity = rand(5, 10);
-        $a = 0;
-        $b = 0;
-        for ($j = 1; $j < $quantity; $j++) {
-            $val = $a + $iter;
-            $b = $val;
-            $a = $b;
-            $arrProg[$val] = $val;
-        }
-        $quantity !== 10 ? $f = (10 - $quantity) * $iter : $f = 10 * $iter;
-        $replacement = array($f => "..");
-        $finalArrProg = array_replace($arrProg, $replacement);
-        $key = implode(' ', $finalArrProg);
-        $numers[$key] = (string) $f;
+    $resultArr = [];
+    $maxIteration = 3;
+    for ($i = 0; $i < $maxIteration; $i++) {
+        $a = getNumbers();
+        $b = (string) $a[0];
+        $c = (string) $a[1];
+        $resultArr[$b] = $c;
     }
-        return $numers;
+    return $resultArr;
 }
+
 function setProgression(string $name)
 {
     $introduction = 'What number is missing in the progression?';
