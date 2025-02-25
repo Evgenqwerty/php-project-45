@@ -11,7 +11,7 @@ function launchPrime()
     $name = welcome();
     setPrime($name);
 }
-function isSimple($number)
+function isSimple(int $number)
 {
     if ($number <= 1) {
             return false;
