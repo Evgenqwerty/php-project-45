@@ -11,7 +11,7 @@ function launchGCD()
         $name = welcome();
         SetGcd($name);
 }
-function getGCDBetween($a, $b)
+function getGCDBetween(int $a, int $b)
 {
     while ($b != 0) {
         $m = $a % $b;
