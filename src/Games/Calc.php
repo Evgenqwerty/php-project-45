@@ -21,29 +21,29 @@ function calculate(string $name)
     for ($i = 0; $i < $iterationNumber; $i++) {
         $first = rand(1, 100);
         $second =  rand(1, 100);
-	$mathOperation = array_rand($operations);
-	$plusNum = $first + $second;
-	$minusNum = $first - $second;
-	$multiNum = $first * $second;
+        $mathOperation = array_rand($operations);
+        $plusNum = $first + $second;
+        $minusNum = $first - $second;
+        $multiNum = $first * $second;
         switch ($operations[$mathOperation]) {
-	case 'plus':
-		if(in_array($plusNum, $numbers)){
-		    $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
-		}
-		$numbers["$first + $second"] = (string)  $plusNum;
+            case 'plus':
+                if (in_array($plusNum, $numbers)) {
+                    $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
+                }
+                $numbers["$first + $second"] = (string)  $plusNum;
                 break;
-	case 'minus':
-		if(in_array($minusNum, $numbers)){
-			$numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
-		}
-		$numbers["$first - $second"] = (string) ($minusNum);
-		break;
-	case 'multiply':
-		if(in_array($multiNum, $numbers)){
-			$numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
-		}
-		$numbers["$first * $second"] = (string) ($multiNum);
-		break;
+            case 'minus':
+                if (in_array($minusNum, $numbers)) {
+                    $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
+                }
+                $numbers["$first - $second"] = (string) ($minusNum);
+                break;
+            case 'multiply':
+                if (in_array($multiNum, $numbers)) {
+                    $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
+                }
+                    $numbers["$first * $second"] = (string) ($multiNum);
+                break;
             default:
                 $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
         }
