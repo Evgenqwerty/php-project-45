@@ -5,7 +5,7 @@ namespace BrainGames\Cli;
 use function cli\prompt;
 use function cli\line;
 
-function conversation(array $numbers, string $name, string $introduction): void
+function gameProcess(array $numbers, string $name, string $introduction): void
 {
     line($introduction);
     foreach ($numbers as $question => $number) {

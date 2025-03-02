@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\conversation;
+use function BrainGames\Cli\gameProcess;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -29,5 +29,5 @@ function SetGcd(string $name)
         $number2 = rand(0, 100);
         $numbers["$number1 $number2"] = (string) getGCDBetween($number1, $number2);
     }
-    conversation($numbers, $name, $introduction);
+    gameProcess($numbers, $name, $introduction);
 }

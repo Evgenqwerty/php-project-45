@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\conversation;
+use function BrainGames\Cli\gameProcess;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -24,5 +24,9 @@ function setEven(string $name)
             $numbers[$number] = 'no';
         }
     }
-    conversation($numbers, $name, $introduction);
+    if(count($numbers) < 3){
+	    $numbers = [];
+	    $numbers['less than three values in the condition were obtained. Tap any symbol to exit game'] = (string) ('error');
+    }
+    gameProcess($numbers, $name, $introduction);
 }

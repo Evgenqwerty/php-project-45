@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\conversation;
+use function BrainGames\Cli\gameProcess;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -19,7 +19,6 @@ function getNumbers()
     $start = rand(5, 10);
     $step = rand(1, 5);
     $maxNumber = rand(5, 10);
-    $firstNumber = $start - $step;
     $a = 0;
     for ($i = 0; $i <= $maxNumber; $i++) {
         $val = $a + $step;
@@ -54,5 +53,5 @@ function setProgression(string $name)
 {
     $introduction = 'What number is missing in the progression?';
     $numbers = getProgression();
-    conversation($numbers, $name, $introduction);
+    gameProcess($numbers, $name, $introduction);
 }

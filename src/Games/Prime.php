@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-use function BrainGames\Cli\conversation;
+use function BrainGames\Cli\gameProcess;
 use function BrainGames\Cli\welcome;
 use function cli\line;
 
@@ -11,7 +11,7 @@ function launchPrime()
     $name = welcome();
     setPrime($name);
 }
-function isSimple(int $number)
+function isPrime(int $number)
 {
     if ($number <= 1) {
             return false;
@@ -29,7 +29,7 @@ function setPrime(string $name)
     $numbers = [];
     for ($i = 0; $i < 3; $i++) {
         $number = rand(1, 100);
-        $number == isSimple($number) ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
+        $number == isPrime($number) ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
     }
-    conversation($numbers, $name, $introduction);
+    gameProcess($numbers, $name, $introduction);
 }
