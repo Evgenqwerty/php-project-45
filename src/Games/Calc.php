@@ -22,9 +22,9 @@ function calculate(string $name)
         $first = rand(1, 100);
         $second =  rand(1, 100);
         $mathOperation = array_rand($operations);
-        $plusNum = $first + $second;
-        $minusNum = $first - $second;
-        $multiNum = $first * $second;
+        $plusNum = (string) ($first + $second);
+        $minusNum =(string) ($first - $second);
+        $multiNum = (string) ($first * $second);
         switch ($operations[$mathOperation]) {
             case 'plus':
                 if (in_array($plusNum, $numbers, true)) {
