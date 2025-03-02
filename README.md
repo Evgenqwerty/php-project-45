@@ -8,7 +8,7 @@ Maintainability Badge Code Climate
 First project on Hexlet by Ukhvatkin.J.V. Five simple games via cli
 
 ## minimum system requirements:
-Composer version 2.8.5
+Composer version 2.8.5  
 PHP version 8.2.27
 
 ## Install:
