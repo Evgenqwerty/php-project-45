@@ -27,19 +27,19 @@ function calculate(string $name)
         $multiNum = $first * $second;
         switch ($operations[$mathOperation]) {
             case 'plus':
-                if (in_array($plusNum, $numbers)) {
+                if (in_array($plusNum, $numbers, false)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
                 $numbers["$first + $second"] = (string)  $plusNum;
                 break;
             case 'minus':
-                if (in_array($minusNum, $numbers)) {
+                if (in_array($minusNum, $numbers, false)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
                 $numbers["$first - $second"] = (string) ($minusNum);
                 break;
             case 'multiply':
-                if (in_array($multiNum, $numbers)) {
+                if (in_array($multiNum, $numbers, false)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
                     $numbers["$first * $second"] = (string) ($multiNum);

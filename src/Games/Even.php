@@ -26,7 +26,7 @@ function setEven(string $name)
     }
     if (count($numbers) < 3) {
         $numbers = [];
-        $numbers['less than three values in the condition were obtained. Tap any symbol to exit'] = (string) ('error');
+        $numbers['less than three values in the condition were obtained. Tap any symbol to exit'] = ('error');
     }
     gameProcess($numbers, $name, $introduction);
 }
