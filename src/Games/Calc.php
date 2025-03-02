@@ -23,7 +23,7 @@ function calculate(string $name)
         $second =  rand(1, 100);
         $mathOperation = array_rand($operations);
         $plusNum = (string) ($first + $second);
-        $minusNum =(string) ($first - $second);
+        $minusNum = (string) ($first - $second);
         $multiNum = (string) ($first * $second);
         switch ($operations[$mathOperation]) {
             case 'plus':
