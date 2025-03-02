@@ -30,19 +30,19 @@ function calculate(string $name)
                 if (in_array($plusNum, $numbers, true)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
-                $numbers["$first + $second"] = (string)  $plusNum;
+                $numbers["$first + $second"] = $plusNum;
                 break;
             case 'minus':
                 if (in_array($minusNum, $numbers, true)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
-                $numbers["$first - $second"] = (string) ($minusNum);
+                $numbers["$first - $second"] = ($minusNum);
                 break;
             case 'multiply':
                 if (in_array($multiNum, $numbers, true)) {
                     $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
                 }
-                    $numbers["$first * $second"] = (string) ($multiNum);
+                    $numbers["$first * $second"] = ($multiNum);
                 break;
             default:
                 $numbers['Switch construction is crushed. Tap any symbol to exit game'] = (string) ($first);
