@@ -2,6 +2,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\launchProgression;
+use function BrainGames\Src\Games\launchProgression;
 
 launchProgression();

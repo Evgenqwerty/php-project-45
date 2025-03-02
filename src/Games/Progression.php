@@ -1,9 +1,9 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Src\Games;
 
-use function BrainGames\Cli\gameProcess;
-use function BrainGames\Cli\welcome;
+use function BrainGames\Src\gameProcess;
+use function BrainGames\Src\welcome;
 use function cli\line;
 
 function launchProgression()

@@ -2,12 +2,14 @@
 Hexlet tests and linter status:
 [![Actions Status](https://github.com/Evgenqwerty/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Evgenqwerty/php-project-45/actions)  
 Maintainability Badge Code Climate
-[![Maintainability](https://api.codeclimate.com/v1/badges/242485b25f4b4a291655/maintainability)](https://codeclimate.com/github/Evgenqwerty/php-project-45/maintainability)  
-Test Coverage Badge Code Climate
-[![Test Coverage](https://api.codeclimate.com/v1/badges/242485b25f4b4a291655/test_coverage)](https://codeclimate.com/github/Evgenqwerty/php-project-45/test_coverage)  
+[![Maintainability](https://api.codeclimate.com/v1/badges/242485b25f4b4a291655/maintainability)](https://codeclimate.com/github/Evgenqwerty/php-project-45/maintainability)
 
 ## About:
 First project on Hexlet by Ukhvatkin.J.V. Five simple games via cli
+
+## minimum system requirements:
+Composer version 2.8.5
+PHP version 8.2.27
 
 ## Install:
 ```
