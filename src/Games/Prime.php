@@ -29,7 +29,7 @@ function setPrime(string $name)
     $numbers = [];
     for ($i = 0; $i < 3; $i++) {
         $number = rand(1, 100);
-        $number == isPrime($number) ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
+        $number === isPrime($number) ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
     }
     gameProcess($numbers, $name, $introduction);
 }

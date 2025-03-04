@@ -8,11 +8,11 @@ use function cli\line;
 function gameProcess(array $numbers, string $name, string $introduction): void
 {
     line($introduction);
-    foreach ($numbers as $question => $number) {
+    foreach ($numbers as $question => $trueAnswer) {
         $askQuestion = line("Question: $question");
         $answer = prompt("Your answer");
-        if ($answer !== $number) {
-            line("{$answer} is wrong answer ;(. Correct answer was {$number}");
+        if ($answer !== $trueAnswer) {
+            line("{$answer} is wrong answer ;(. Correct answer was {$trueAnswer}");
             line("Let's try again, {$name}!");
             return;
         }

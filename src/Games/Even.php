@@ -17,12 +17,8 @@ function setEven(string $name)
     $introduction = 'Answer "yes" if the number is even, otherwise answer "no".';
     $numbers = [];
     for ($i = 0; $i < 3; $i++) {
-            $number = rand(0, 100);
-        if ($number % 2 == 0) {
-            $numbers[$number] = 'yes';
-        } else {
-            $numbers[$number] = 'no';
-        }
+        $number = rand(0, 100);
+        $number % 2 === 0 ? $numbers[$number] = 'yes' : $numbers[$number] = 'no';
     }
     if (count($numbers) < 3) {
         $numbers = [];

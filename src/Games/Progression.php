@@ -38,15 +38,15 @@ function getNumbers()
 
 function getProgression()
 {
-    $resultArr = [];
+    $results = [];
     $maxIteration = 3;
     for ($i = 0; $i < $maxIteration; $i++) {
         $a = getNumbers();
         $b = (string) $a[0];
         $c = (string) $a[1];
-        $resultArr[$b] = $c;
+        $results[$b] = $c;
     }
-    return $resultArr;
+    return $results;
 }
 
 function setProgression(string $name)
