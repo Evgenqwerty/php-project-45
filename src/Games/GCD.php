@@ -9,7 +9,7 @@ use function cli\line;
 function launchGCD()
 {
         $name = welcome();
-        SetGcd($name);
+        setGcd($name);
 }
 function getGCDBetween(int $a, int $b)
 {
@@ -20,7 +20,7 @@ function getGCDBetween(int $a, int $b)
     }
     return $a;
 }
-function SetGcd(string $name)
+function setGcd(string $name)
 {
     $introduction = 'Find the greatest common divisor of given numbers.';
     $numbers = [];
